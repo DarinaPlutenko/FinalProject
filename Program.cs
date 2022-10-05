@@ -4,16 +4,8 @@ using static System.Console;
 string[] AskArray()
 {
     Write("Введите значения через пробел: ");
-    string? line = Console.ReadLine();
-    if (String.IsNullOrEmpty(line))
-    {
-        Console.WriteLine("Введена пустая строка");
-    }
-
     return ReadLine().Split(" ");
 }
-
-
 
 string[] array = AskArray();
 string[] result = FindLessThan(array, 3);
@@ -47,6 +39,3 @@ int CountLessThan(string[] input, int n)
     }
     return count;
 }
-
-
-// https://github.com/VictoriaChern/finalWorkBlock1/blob/main/solution/Program.cs
